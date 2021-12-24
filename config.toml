@@ -1,0 +1,21 @@
+[parity]
+chain = "ethereum"
+base_path = "/data/openethereum"
+
+[rpc]
+port = 8545
+interface = "0.0.0.0"
+cors = ["all"]
+apis = ["safe"]
+hosts = ["all"]
+
+[websockets]
+port = 8546
+interface = "0.0.0.0"
+origins = ["all"]
+apis = ["safe"]
+hosts = ["all"]
+
+[ipc]
+disable = false
+apis = ["all"]
