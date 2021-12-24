@@ -12,9 +12,6 @@ services:
       - 8546:8546
     restart: always
     volumes:
-      - data-volume:/data/openethereum
+      - ./data:/data/openethereum
       - ./config.toml:/home/openethereum/config.toml
     command: --config /home/openethereum/config.toml
-
-volumes:
-  data-volume:
