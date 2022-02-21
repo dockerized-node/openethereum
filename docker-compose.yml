@@ -3,6 +3,8 @@ version: "3.3"
 services:
   openethereum:
     image: openethereum
+    build:
+      context: .
     container_name: openethereum
     expose:
       - 8545
