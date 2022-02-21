@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   openethereum:
-    image: openethereum/openethereum:latest
+    image: openethereum
     container_name: openethereum
     expose:
       - 8545
@@ -14,6 +14,6 @@ services:
       - 30303:30303
     restart: always
     volumes:
-      - ./data:/data/openethereum
+      - ./data:/home/openethereum/data
       - ./config.toml:/home/openethereum/config.toml
     command: --config /home/openethereum/config.toml
