@@ -16,6 +16,6 @@ services:
       - 30303:30303
     restart: always
     volumes:
-      - ./data:/home/openethereum/data
-      - ./config.toml:/home/openethereum/config.toml
-    command: --config /home/openethereum/config.toml
+      - ./data:/openethereum/data
+      - ./config.toml:/openethereum/config.toml
+    command: --config /openethereum/config.toml

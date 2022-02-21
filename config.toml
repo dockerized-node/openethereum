@@ -5,7 +5,7 @@ nat = "extip:127.0.0.1"
 
 [parity]
 chain = "ethereum"
-base_path = "/data/openethereum"
+base_path = "/openethereum/data"
 
 [rpc]
 port = 8545
